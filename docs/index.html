@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="/css/blog/blog.css">
 <script>
 var client = new XMLHttpRequest();
-client.open('GET', '/index.txt');
+client.open('GET', '/HedwigHall/index.txt');
 client.onreadystatechange = function() {
 document.getElementsByTagName("blog-text")[0].innerHTML = client.responseText;
 if(document.location.hostname.toString().indexOf(".") > -1){document.title = document.location.hostname.toString().substr(0,document.location.hostname.toString().indexOf("."))} else {document.title = "hh";}
